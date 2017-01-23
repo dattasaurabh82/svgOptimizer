@@ -1,13 +1,13 @@
 import processing.svg.*;
 
-int canvasWidth = 1180;
-int canvasHeight = 1180;
+int canvasWidth = 600;
+int canvasHeight = 600;
 
 int canvasOriginX = 0;
 int canvasOriginY = 0;
 
-int newOriginLimitX = 200;
-int newOriginLimitY = 200;
+int newOriginLimitX = 100;
+int newOriginLimitY = 100;
 
 int newOriginWidth = 50;
 int newOriginHeight = 50;
@@ -30,7 +30,7 @@ String homePoints;
 boolean saveOneFrame = false;
 
 void setup() {
-  size(1180, 1180);
+  size(600, 600);
   //fullScreen();
   background(255);
 
@@ -43,7 +43,7 @@ void setup() {
 
   pushMatrix();
   translate(translateXPos, translateYPos);
-  rotate(radians(180));
+  rotate(radians(270));
   shapeXPos = int(-frogs.width);
   shapeYPos = int(0);
   shape(frogs, shapeXPos, shapeYPos, frogs.width, frogs.height);
@@ -76,23 +76,23 @@ void draw() {
 
   pushMatrix();
   translate(translateXPos, translateYPos);
-  rotate(radians(180));
+  rotate(radians(270));
   scale(scaleVal);
   shape(frogs, shapeXPos, shapeYPos, frogs.width, frogs.height);
   popMatrix();
 
   if (keyPressed) {
     if (key == 'w' || key == 'W') {
-      shapeYPos++;
-    }
-    if (key == 's' || key == 's') {
-      shapeYPos--;
-    }
-    if (key == 'a' || key == 'A') {
       shapeXPos++;
     }
-    if (key == 'd' || key == 'D') {
+    if (key == 's' || key == 's') {
       shapeXPos--;
+    }
+    if (key == 'a' || key == 'A') {
+      shapeYPos--;
+    }
+    if (key == 'd' || key == 'D') {
+      shapeYPos++;
     }
     if (key == '+' || key == '=') {
       scaleVal += 0.01;
