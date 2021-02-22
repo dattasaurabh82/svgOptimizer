@@ -6,7 +6,7 @@ Scaling,  re-formatting, positioning svg for my plotter <br> <br>
 On a large display do:
 `cmd shift R`
 
-##controls:
+### controls:
 |Keys            |Functions                  |
 |----------------|:-------------------------:|
 |`m`             |displaying/undisplaying    |
