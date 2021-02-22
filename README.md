@@ -3,7 +3,7 @@ Scaling,  re-formatting, positioning svg for my plotter <br> <br>
 **READ THE NOTES**
 <br> 
 <br>
-####On a large display do:
+On a large display do:
 `cmd shift R`
 
 ##controls:
@@ -21,7 +21,8 @@ Scaling,  re-formatting, positioning svg for my plotter <br> <br>
 |`q`             |to save the svg file       |
 |`esc`           |to quit the application    |
 
-####Notes:
+### Notes:
+
 * try it by downloading first the Latest [processing](https://processing.org/download/?processing)
 * Use a large dislplay on mac
 * Change the Prefrence: `Processing/preference/display/<larger display>`
